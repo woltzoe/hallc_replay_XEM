@@ -33,6 +33,9 @@ void setupParms(Int_t RunNumber) {
   gHcParms->Load(gHcParms->GetString("g_ctp_det_calib_filename"));
   gHcParms->Load(gHcParms->GetString("g_ctp_bcm_calib_filename"));
   gHcParms->Load(gHcParms->GetString("g_ctp_optics_filename"));
+  gHcParms->Load(gHcParms->GetString("g_ctp_reftimecut_filename"));
+  gHcParms->Load(gHcParms->GetString("g_ctp_cal_calib_filename"));
+  gHcParms->Load(gHcParms->GetString("g_ctp_DC_calib_filename"));
   // Load parameters for SHMS trigger configuration
   gHcParms->Load(gHcParms->GetString("g_ctp_trig_config_filename"));
   // Load fadc debug parameters

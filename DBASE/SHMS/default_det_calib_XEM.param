@@ -1,0 +1,11 @@
+; SHMS default calibration parameter files
+; This only includes calibrations that don't change throughout the run
+; Specifically, calorimeter and drift chamber calibrations are loaded elsewhere to ensure
+;   that they are set to what we think they should be set to.
+; Removing calibrations that are included elsewhere is probably unnecessary, but ensures
+;   that we aren't fooled into thinking a calibration is used that isn't
+#include "PARAM/SHMS/NGCER/pngcer_calib_lower_hv_fa22.param"
+#include "PARAM/SHMS/HGCER/phgcer_calib_fa22.param"
+#include "PARAM/SHMS/AERO/paero_calib_fa22.param"
+#include "PARAM/SHMS/HODO/phodo_TWcalib_fa22.param"
+#include "PARAM/SHMS/HODO/phodo_Vpcalib_fa22.param"

@@ -1,0 +1,3 @@
+; SHMS drift chamber calibration parameter files
+#include "PARAM/SHMS/DC/pdc_calib_18436.param"
+#include "PARAM/SHMS/DC/pdc_tzero_per_wire_18436.param"
