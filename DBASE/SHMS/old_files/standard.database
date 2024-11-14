@@ -1,0 +1,2328 @@
+; Common kinematics parameter for ALL running
+0-99999
+g_ctp_kinematics_filename = "DBASE/SHMS/standard.kinematics"
+
+
+; General parameters for Spring 2018 running during F2.
+0-7100
+g_ctp_parm_filename        = "DBASE/SHMS/general_sp18.param"
+g_ctp_det_calib_filename   = "DBASE/SHMS/default_det_calib_sp18.param"
+g_ctp_bcm_calib_filename   = "PARAM/GEN/gscalers_sp18.param"
+g_ctp_optics_filename      = "PARAM/SHMS/GEN/pcana_sp18.param"
+g_ctp_map_filename         = "MAPS/SHMS/DETEC/STACK/shms_stack_sp18.map"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_sp18.param"
+g_ctp_template_filename    = "TEMPLATES/SHMS/PRODUCTION/pstackana_production_sp18.template"
+
+; General parameters for Spring 2019 running during j-psi
+7188-7261
+g_ctp_parm_filename        = "DBASE/SHMS/general_sp19.param"
+g_ctp_det_calib_filename   = "DBASE/SHMS/default_det_calib_sp19.param"
+g_ctp_bcm_calib_filename   = "PARAM/GEN/gscalers_sp19.param"
+g_ctp_optics_filename      = "PARAM/SHMS/GEN/pcana_sp19.param"
+g_ctp_map_filename         = "MAPS/SHMS/DETEC/STACK/shms_stack_sp19.map"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_sp19.param"
+g_ctp_template_filename    = "TEMPLATES/SHMS/PRODUCTION/pstackana_production_sp18.template"
+
+
+; General parameters for Fall 2022 running during the full experiment
+;SHMS run 17382 was used for the hodoscope calibraion 
+7300-99999
+g_ctp_parm_filename        = "DBASE/SHMS/general_fa22.param"
+g_ctp_det_calib_filename   = "DBASE/SHMS/default_det_calib_fa22.param"
+;g_ctp_bcm_calib_filename  = "PARAM/GEN/gscalers_fa22.param"
+g_ctp_bcm_calib_filename   = "PARAM/GEN/BCM/gbcm_fa22.param"
+;g_ctp_optics_filename      = "PARAM/SHMS/GEN/pcana_fa22.param"
+g_ctp_map_filename         = "MAPS/SHMS/DETEC/STACK/shms_stack_fa22.map"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_fa22.param"
+g_ctp_template_filename    = "TEMPLATES/SHMS/PRODUCTION/pstackana_production_fa22.template"
+
+
+; Specialized detector calibrations w.r.t. kinematic settings
+
+
+1791
+;Defocused run used for hodo calib.
+;No special DET files, just need for hodo calib.
+
+2484-2508
+;Production EMC
+g_ctp_bcm_calib_filename = "PARAM/GEN/BCM/gbcm_period1_unser1_sp18.param"
+g_ctp_optics_filename = "PARAM/SHMS/GEN/pcana_5p1.param"
+g_ctp_det_calib_filename = "DBASE/SHMS/DET/calib_21deg_m5p1.param"
+
+
+2509-2523
+;Production EMC
+g_ctp_bcm_calib_filename = "PARAM/GEN/BCM/gbcm_period1_unser1_sp18.param"
+g_ctp_optics_filename = "PARAM/SHMS/GEN/pcana_4p0.param"
+g_ctp_det_calib_filename = "DBASE/SHMS/DET/calib_21deg_m4p0.param"
+
+
+2524-2543
+;Production EMC
+g_ctp_bcm_calib_filename = "PARAM/GEN/BCM/gbcm_period1_unser1_sp18.param"
+g_ctp_optics_filename = "PARAM/SHMS/GEN/pcana_3p3.param"
+g_ctp_det_calib_filename = "DBASE/SHMS/DET/calib_21deg_m3p3.param"
+
+
+2544-2545
+;Production EMC
+g_ctp_bcm_calib_filename = "PARAM/GEN/BCM/gbcm_period1_unser2_sp18.param"
+g_ctp_optics_filename = "PARAM/SHMS/GEN/pcana_3p3.param"
+g_ctp_det_calib_filename = "DBASE/SHMS/DET/calib_21deg_m3p3.param"
+
+
+2547-2563
+;Production EMC
+g_ctp_bcm_calib_filename = "PARAM/GEN/BCM/gbcm_period1_unser2_sp18.param"
+g_ctp_optics_filename = "PARAM/SHMS/GEN/pcana_2p7.param"
+g_ctp_det_calib_filename = "DBASE/SHMS/DET/calib_21deg_m2p7.param"
+
+
+3085-3101
+;Charge-Symmetric Background for EMC
+g_ctp_bcm_calib_filename = "PARAM/GEN/BCM/gbcm_period3_sp18.param"
+;g_ctp_optics_filename = Default Used for CSB runs
+g_ctp_det_calib_filename = "DBASE/SHMS/DET/calib_21deg_p2p7.param"
+
+
+3102-3121
+;Not to be Used!
+;Boiling Runs at 15 degrees on H, D, C, Al
+
+
+3122-3130
+;Boiling at 25 degrees on H and D
+g_ctp_bcm_calib_filename = "PARAM/GEN/BCM/gbcm_period3_sp18.param"
+;g_ctp_optics_filename = Default Used for Boiling runs
+g_ctp_det_calib_filename = "DBASE/SHMS/DET/calib_25deg_m4p4.param"
+
+
+3131-3163
+;X>1 at 8 degrees on H, D, B10, B11, Be12, C, Al
+g_ctp_bcm_calib_filename = "PARAM/GEN/BCM/gbcm_period3_sp18.param"
+g_ctp_optics_filename = "PARAM/SHMS/GEN/pcana_9p8.param"
+g_ctp_det_calib_filename = "DBASE/SHMS/DET/calib_8deg_m9p8.param"
+
+
+3164-3201
+g_ctp_bcm_calib_filename = "PARAM/GEN/BCM/gbcm_period3_sp18.param"
+;g_ctp_optics_filename = Default Used for Boiling runs
+g_ctp_det_calib_filename = "DBASE/SHMS/DET/calib_25deg_m4p4.param"
+
+
+3204-3226
+;Boiling at 25 degrees on H, D, C, Al
+g_ctp_bcm_calib_filename = "PARAM/GEN/BCM/gbcm_period4_sp18.param"
+;g_ctp_optics_filename = Default Used for Boiling runs
+g_ctp_det_calib_filename = "DBASE/SHMS/DET/calib_25deg_m4p4.param"
+
+
+
+
+7197-7261
+;Production during jpsi on H, D, B10, B11, C, Al
+
+
+
+;=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+;Start of full XEM running
+;=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+18002-18127
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18012-18012
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18020-18020
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18030-18030
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18034-18034
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18040-18040
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18066-18066
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18071-18071
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18076-18076
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18080-18080
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18083-18083
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18102-18102
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18106-18106
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18122-18122
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18126-18126
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+19200-19202
+g_ctp_parm_filename        = "DBASE/SHMS/general_4p2gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_4p2gev_26deg_REAL_fa22.param"
+
+19024-19025
+g_ctp_parm_filename        = "DBASE/SHMS/general_5p9gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_5p9gev_26deg_REAL_fa22.param"
+
+19026-19029
+g_ctp_parm_filename        = "DBASE/SHMS/general_5p4gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_5p4gev_26deg_REAL_fa22.param"
+
+18183-18185
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+18187-18188
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+18192-18193
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+18277-18279
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+18284-18284
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+18288-18288
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+18290-18291
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+18299-18300
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+18302-18302
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+18306-18306
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+18308-18310
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+18314-18315
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+18322-18323
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+18328-18329
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+18332-18333
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+18336-18336
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+18338-18338
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+18343-18344
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+18349-18352
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+18375-18378
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+18419-18419
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+18422-18422
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+18425-18426
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+18445-18445
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+18447-18447
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+18563-18564
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+19888-19888
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+19893-19895
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+19897-19898
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+20245-20249
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_34_fa22.param"
+
+17242-17242
+g_ctp_parm_filename        = "DBASE/SHMS/general_4gev_20deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_4gev_20deg_34_fa22.param"
+
+17232-19688
+g_ctp_parm_filename        = "DBASE/SHMS/general_4gev_20deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_4gev_20deg_REAL_fa22.param"
+
+19204-19207
+g_ctp_parm_filename        = "DBASE/SHMS/general_2-5gev_35deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_2-5gev_35deg_REAL_fa22.param"
+
+17246-17248
+g_ctp_parm_filename        = "DBASE/SHMS/general_2-5gev_35deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_2-5gev_35deg_REAL_fa22.param"
+
+17252-17254
+g_ctp_parm_filename        = "DBASE/SHMS/general_2-5gev_35deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_2-5gev_35deg_34_fa22.param"
+
+17249-17249
+g_ctp_parm_filename        = "DBASE/SHMS/general_2-5gev_35deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_2-5gev_35deg_34_fa22.param"
+
+19209-19256
+g_ctp_parm_filename        = "DBASE/SHMS/general_2-5gev_35deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_2-5gev_35deg_REAL_fa22.param"
+
+19024-19025
+g_ctp_parm_filename        = "DBASE/SHMS/general_5-4gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_5-4gev_26deg_REAL_fa22.param"
+
+17326-17327
+g_ctp_parm_filename        = "DBASE/SHMS/general_5-4gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_5-4gev_26deg_REAL_fa22.param"
+
+17329-17332
+g_ctp_parm_filename        = "DBASE/SHMS/general_5-4gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_5-4gev_26deg_REAL_fa22.param"
+
+17334-17336
+g_ctp_parm_filename        = "DBASE/SHMS/general_5-4gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_5-4gev_26deg_REAL_fa22.param"
+
+17338-17343
+g_ctp_parm_filename        = "DBASE/SHMS/general_5-4gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_5-4gev_26deg_REAL_fa22.param"
+
+17346-17347
+g_ctp_parm_filename        = "DBASE/SHMS/general_5-4gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_5-4gev_26deg_REAL_fa22.param"
+
+17349-17349
+g_ctp_parm_filename        = "DBASE/SHMS/general_5-4gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_5-4gev_26deg_REAL_fa22.param"
+
+19026-19029
+g_ctp_parm_filename        = "DBASE/SHMS/general_5-4gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_5-4gev_26deg_REAL_fa22.param"
+
+17337-17337
+g_ctp_parm_filename        = "DBASE/SHMS/general_5-4gev_26deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_5-4gev_26deg_34_fa22.param"
+
+17344-17345
+g_ctp_parm_filename        = "DBASE/SHMS/general_5-4gev_26deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_5-4gev_26deg_34_fa22.param"
+
+17350-17353
+g_ctp_parm_filename        = "DBASE/SHMS/general_4-7gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_4-7gev_26deg_REAL_fa22.param"
+
+17356-17366
+g_ctp_parm_filename        = "DBASE/SHMS/general_4-7gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_4-7gev_26deg_REAL_fa22.param"
+
+17354-17355
+g_ctp_parm_filename        = "DBASE/SHMS/general_4-7gev_26deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_4-7gev_26deg_34_fa22.param"
+
+19066-19069
+g_ctp_parm_filename        = "DBASE/SHMS/general_4-7gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_4-7gev_26deg_REAL_fa22.param"
+
+19200-19202
+g_ctp_parm_filename        = "DBASE/SHMS/general_4-1gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_4-1gev_26deg_REAL_fa22.param"
+
+17376-17377
+g_ctp_parm_filename        = "DBASE/SHMS/general_4-1gev_26deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_4-1gev_26deg_34_fa22.param"
+
+17367-17375
+g_ctp_parm_filename        = "DBASE/SHMS/general_4-1gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_4-1gev_26deg_REAL_fa22.param"
+
+17378-17381
+g_ctp_parm_filename        = "DBASE/SHMS/general_4-1gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_4-1gev_26deg_REAL_fa22.param"
+
+17383-17384
+g_ctp_parm_filename        = "DBASE/SHMS/general_3-6gev_26deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_3-6gev_26deg_34_fa22.param"
+
+17382-17382
+g_ctp_parm_filename        = "DBASE/SHMS/general_3-6gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_3-6gev_26deg_REAL_fa22.param"
+
+17385-17390
+g_ctp_parm_filename        = "DBASE/SHMS/general_3-6gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_3-6gev_26deg_REAL_fa22.param"
+
+17243-17244
+g_ctp_parm_filename        = "DBASE/SHMS/general_3-6gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_3-6gev_26deg_REAL_fa22.param"
+
+17245-17245
+g_ctp_parm_filename        = "DBASE/SHMS/general_3-6gev_26deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_3-6gev_26deg_34_fa22.param"
+
+17400-17405
+g_ctp_parm_filename        = "DBASE/SHMS/general_3-2gev_26deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_3-2gev_26deg_34_fa22.param"
+
+17391-17399
+g_ctp_parm_filename        = "DBASE/SHMS/general_3-2gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_3-2gev_26deg_REAL_fa22.param"
+
+17406-17406
+g_ctp_parm_filename        = "DBASE/SHMS/general_3-2gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_3-2gev_26deg_REAL_fa22.param"
+
+17436-17436
+g_ctp_parm_filename        = "DBASE/SHMS/general_2-8gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_2-8gev_26deg_REAL_fa22.param"
+
+17447-17447
+g_ctp_parm_filename        = "DBASE/SHMS/general_2-8gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_2-8gev_26deg_REAL_fa22.param"
+
+17451-17451
+g_ctp_parm_filename        = "DBASE/SHMS/general_2-8gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_2-8gev_26deg_REAL_fa22.param"
+
+17407-17408
+g_ctp_parm_filename        = "DBASE/SHMS/general_2-8gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_2-8gev_26deg_REAL_fa22.param"
+
+17411-17411
+g_ctp_parm_filename        = "DBASE/SHMS/general_2-8gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_2-8gev_26deg_REAL_fa22.param"
+
+17413-17415
+g_ctp_parm_filename        = "DBASE/SHMS/general_2-8gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_2-8gev_26deg_REAL_fa22.param"
+
+17412-17412
+g_ctp_parm_filename        = "DBASE/SHMS/general_2-8gev_26deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_2-8gev_26deg_34_fa22.param"
+
+17448-17450
+g_ctp_parm_filename        = "DBASE/SHMS/general_2-8gev_26deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_2-8gev_26deg_34_fa22.param"
+
+17416-17420
+g_ctp_parm_filename        = "DBASE/SHMS/general_2-5gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_2-5gev_26deg_REAL_fa22.param"
+
+17423-17423
+g_ctp_parm_filename        = "DBASE/SHMS/general_2-5gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_2-5gev_26deg_REAL_fa22.param"
+
+17452-17452
+g_ctp_parm_filename        = "DBASE/SHMS/general_2-5gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_2-5gev_26deg_REAL_fa22.param"
+
+17455-17457
+g_ctp_parm_filename        = "DBASE/SHMS/general_2-5gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_2-5gev_26deg_REAL_fa22.param"
+
+17460-17461
+g_ctp_parm_filename        = "DBASE/SHMS/general_2-5gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_2-5gev_26deg_REAL_fa22.param"
+
+17421-17422
+g_ctp_parm_filename        = "DBASE/SHMS/general_2-5gev_26deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_2-5gev_26deg_34_fa22.param"
+
+17453-17454
+g_ctp_parm_filename        = "DBASE/SHMS/general_2-5gev_26deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_2-5gev_26deg_34_fa22.param"
+
+17458-17459
+g_ctp_parm_filename        = "DBASE/SHMS/general_2-5gev_26deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_2-5gev_26deg_34_fa22.param"
+
+17462-17462
+g_ctp_parm_filename        = "DBASE/SHMS/general_2-5gev_26deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_2-5gev_26deg_34_fa22.param"
+
+17464-17465
+g_ctp_parm_filename        = "DBASE/SHMS/general_2-2gev_26deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_2-2gev_26deg_34_fa22.param"
+
+17463-17463
+g_ctp_parm_filename        = "DBASE/SHMS/general_2-2gev_26deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_2-2gev_26deg_CLEAN_fa22.param"
+
+17466-17467
+g_ctp_parm_filename        = "DBASE/SHMS/general_2-2gev_26deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_2-2gev_26deg_CLEAN_fa22.param"
+
+17313-17315
+g_ctp_parm_filename        = "DBASE/SHMS/general_1-9gev_26deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_1-9gev_26deg_34_fa22.param"
+
+17317-17318
+g_ctp_parm_filename        = "DBASE/SHMS/general_1-9gev_26deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_1-9gev_26deg_34_fa22.param"
+
+17425-17428
+g_ctp_parm_filename        = "DBASE/SHMS/general_1-9gev_26deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_1-9gev_26deg_34_fa22.param"
+
+17469-17470
+g_ctp_parm_filename        = "DBASE/SHMS/general_1-9gev_26deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_1-9gev_26deg_34_fa22.param"
+
+17473-17474
+g_ctp_parm_filename        = "DBASE/SHMS/general_1-9gev_26deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_1-9gev_26deg_34_fa22.param"
+
+17477-17477
+g_ctp_parm_filename        = "DBASE/SHMS/general_1-9gev_26deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_1-9gev_26deg_34_fa22.param"
+
+17468-17468
+g_ctp_parm_filename        = "DBASE/SHMS/general_1-9gev_26deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_1-9gev_26deg_CLEAN_fa22.param"
+
+17471-17472
+g_ctp_parm_filename        = "DBASE/SHMS/general_1-9gev_26deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_1-9gev_26deg_CLEAN_fa22.param"
+
+17475-17476
+g_ctp_parm_filename        = "DBASE/SHMS/general_1-9gev_26deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_1-9gev_26deg_CLEAN_fa22.param"
+
+17319-17325
+g_ctp_parm_filename        = "DBASE/SHMS/general_1-9gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_1-9gev_26deg_REAL_fa22.param"
+
+17424-17424
+g_ctp_parm_filename        = "DBASE/SHMS/general_1-9gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_1-9gev_26deg_REAL_fa22.param"
+
+17430-17433
+g_ctp_parm_filename        = "DBASE/SHMS/general_1-9gev_26deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_1-9gev_26deg_REAL_fa22.param"
+
+18186-18186
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18189-18190
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18194-18196
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18276-18276
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18280-18282
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18285-18286
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18289-18289
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18292-18293
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18298-18298
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18303-18304
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18307-18307
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18311-18313
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18316-18317
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18320-18321
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18324-18324
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18326-18327
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18330-18331
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18334-18335
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18340-18340
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18355-18355
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18363-18374
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18379-18380
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18395-18409
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18411-18412
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18416-18417
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18420-18420
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18423-18423
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18427-18439
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18442-18444
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18494-18499
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18504-18507
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18509-18525
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18527-18529
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18532-18534
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18537-18544
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18547-18562
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18565-18566
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18568-18586
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18591-18673
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18675-18683
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18687-18688
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18690-18711
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18713-18719
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18722-18722
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18724-18727
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18729-18740
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18747-18747
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18749-18752
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18754-18758
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18760-18805
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18807-18840
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18843-18856
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18859-18881
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18885-18896
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18898-18905
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18907-18917
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18919-18959
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18925-18930
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18934-18942
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18946-18947
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18949-18950
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18954-18957
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18959-18959
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18961-18963
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18966-18967
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18970-18971
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18973-18973
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18976-18976
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18978-18978
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18982-18982
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18984-18985
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18990-18990
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+19319-19364
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+19382-19403
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+19892-19892
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+19899-19904
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+19907-19913
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+19915-19927
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+19929-19950
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+19952-19956
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+19958-19965
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+19967-19972
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+19979-19987
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+19989-20035
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20037-20069
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20072-20102
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20104-20120
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20123-20128
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20130-20140
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20142-20156
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20158-20161
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20164-20180
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20182-20201
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20203-20234
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20240-20244
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20255-20262
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20266-20271
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20275-20276
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20278-20278
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20280-20283
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20287-20293
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20296-20308
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20310-20316
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20318-20323
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20325-20329
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20331-20333
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20335-20356
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20415-20424
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20426-20432
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20436-20442
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20444-20451
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20453-20474
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20476-20485
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20487-20501
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20507-20512
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+19366-19378
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+19381-19381
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+19379-19380
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+17300-17300
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+17303-17304
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+17307-17307
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+17301-17302
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17305-17306
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17308-17312
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19274-19276
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19263-19273
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_CLEAN_fa22.param"
+
+19689-19690
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_CLEAN_fa22.param"
+
+19692-19709
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_CLEAN_fa22.param"
+
+19711-19716
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_CLEAN_fa22.param"
+
+19718-19718
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_CLEAN_fa22.param"
+
+19720-19730
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_CLEAN_fa22.param"
+
+19732-19732
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_CLEAN_fa22.param"
+
+19734-19741
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_CLEAN_fa22.param"
+
+19746-19817
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_CLEAN_fa22.param"
+
+19819-19840
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_CLEAN_fa22.param"
+
+19842-19875
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_CLEAN_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_CLEAN_fa22.param"
+
+17479-17480
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_CLEAN_fa22.param"
+
+17483-17485
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_CLEAN_fa22.param"
+
+17488-17492
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_CLEAN_fa22.param"
+
+17496-17497
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_CLEAN_fa22.param"
+
+17500-17501
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_CLEAN_fa22.param"
+
+17504-17505
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_CLEAN_fa22.param"
+
+17509-17510
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_CLEAN_fa22.param"
+
+17513-17513
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_CLEAN_fa22.param"
+
+17529-17529
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_CLEAN_fa22.param"
+
+17532-17533
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_CLEAN_fa22.param"
+
+17536-17537
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_CLEAN_fa22.param"
+
+17540-17541
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_CLEAN_fa22.param"
+
+17545-17546
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_CLEAN_fa22.param"
+
+17549-17550
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_CLEAN_fa22.param"
+
+17553-17553
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_CLEAN_fa22.param"
+
+19150-19159
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_CLEAN_fa22.param"
+
+17259-17259
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+17263-17263
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+17268-17271
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+17279-17279
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+17288-17289
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+17297-17298
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+17481-17482
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+17486-17487
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+17493-17494
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+17498-17499
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+17502-17503
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+17508-17508
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+17511-17512
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+17514-17516
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+17522-17526
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+17531-17531
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+17534-17535
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+17538-17539
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+17542-17544
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+17547-17548
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+17551-17552
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+17609-17609
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+17647-17647
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+17843-17843
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+17915-17915
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18012-18012
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18020-18020
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18030-18030
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18034-18034
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18040-18040
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18066-18066
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18080-18080
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18083-18083
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18102-18102
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18106-18106
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18122-18122
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18126-18126
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18140-18141
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18147-18148
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18151-18152
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18155-18156
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18160-18161
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18164-18165
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18170-18171
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18174-18175
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18991-18991
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18993-18993
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+19108-19109
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+19189-19192
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+19415-19416
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+19445-19445
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+19455-19455
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+19479-19479
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+19510-19510
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+19522-19522
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+19533-19533
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+19557-19557
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+19564-19565
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+19574-19574
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+19581-19581
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+19591-19591
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+19600-19600
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+19606-19606
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+19613-19613
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+19619-19619
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+19627-19627
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+19629-19631
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+20361-20361
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+20371-20371
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+20377-20377
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+20385-20385
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+20391-20391
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+20400-20400
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+20402-20403
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+20407-20408
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+20414-20414
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_34_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_34_fa22.param"
+
+18384-18385
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18387-18388
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18391-18394
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+18381-18381
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+18390-18390
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+19278-19293
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+19297-19318
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+17255-17257
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17272-17272
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17274-17277
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17282-17282
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17284-17284
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17287-17287
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17290-17290
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17292-17296
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17299-17299
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17518-17518
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17520-17521
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17527-17528
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17554-17561
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17563-17567
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17569-17597
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17603-17603
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17605-17608
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17610-17613
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17615-17629
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17632-17641
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17643-17645
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17650-17650
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17652-17692
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17694-17698
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17701-17754
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17757-17768
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17770-17783
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17785-17793
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17795-17842
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17844-17847
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17849-17871
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17873-17910
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17912-17914
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17916-17919
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17921-17935
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17937-17950
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17952-17960
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17962-17971
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17973-17976
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17978-17991
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17989-17994
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+17996-18001
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18003-18004
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18006-18007
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18009-18011
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18013-18014
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18016-18019
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18022-18029
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18031-18033
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18035-18035
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18038-18038
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18041-18053
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18055-18059
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18061-18063
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18067-18068
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18070-18070
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18072-18075
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18077-18077
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18079-18079
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18081-18082
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18084-18101
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18103-18105
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18107-18121
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18123-18125
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18128-18136
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18138-18138
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18145-18146
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18149-18150
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18153-18154
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18157-18159
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18162-18163
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18166-18168
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18172-18173
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18176-18178
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18180-18181
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18992-18992
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18994-19023
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19070-19089
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19091-19107
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19110-19149
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19160-19177
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19180-19184
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19194-19199
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19407-19408
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19412-19414
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19417-19417
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19419-19419
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19421-19439
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19443-19444
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19447-19454
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19456-19456
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19458-19462
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19464-19476
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19478-19478
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19480-19509
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19511-19512
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19514-19516
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19518-19518
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19520-19521
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19523-19530
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19534-19535
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19537-19537
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19539-19543
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19545-19549
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19551-19551
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19553-19553
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19555-19556
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19558-19558
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19560-19561
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19563-19563
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19566-19566
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19568-19572
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19575-19578
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19580-19580
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19583-19585
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19589-19589
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19592-19599
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19601-19605
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19607-19612
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19614-19618
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19620-19620
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19622-19623
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19625-19626
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19628-19628
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+19632-19647
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+20358-20359
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+20362-20370
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+20372-20376
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+20378-20384
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+20386-20390
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+20392-20395
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+20397-20399
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+20401-20401
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+20405-20406
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+20409-20409
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+20413-20413
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+18341-18342
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+18345-18348
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+18353-18354
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+18356-18361
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+18421-18421
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+18587-18590
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+18684-18684
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+18686-18686
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+18720-18721
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+18857-18858
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+18882-18883
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+18922-18924
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+18931-18932
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+18943-18943
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+18945-18945
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+18948-18948
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+18951-18951
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+18953-18953
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+18958-18958
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+18960-18960
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+18965-18965
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+18968-18969
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+18972-18972
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+18974-18975
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+18980-18981
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+18983-18983
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+18988-18989
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+19259-19262
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+19975-19975
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+19988-19988
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+20070-20070
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+20265-20265
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+20286-20286
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+20317-20317
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+20324-20324
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+20443-20443
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+20506-20506
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+20614-20770
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_CLEAN_fa22.param"
+
+20513-20613
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_CLEAN_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_CLEAN_fa22.param"
+
+20574-20574
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_10deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_10deg_REAL_fa22.param"
+
+20766-20766
+g_ctp_parm_filename        = "DBASE/SHMS/general_9-2gev_8p5deg_REAL_psOFF_fa22.param"
+g_ctp_trig_config_filename = "PARAM/TRIG/tshms_9-2gev_8p5deg_REAL_fa22.param"
+
+
+
+
+
+17232 - 17232
+;Calibration & PID Threshold Checks Setting 1
+;Defocused Q2+20% calorimeter calibration calibration
+g_ctp_optics_filename      = "PARAM/SHMS/GEN/defocused_Q2_p20_fa22.param"
+
+17239 - 17259
+;Lowered NGCER PMT1 HV.  Reverted to match COIN running (for efficiencies)
+g_ctp_det_calib_filename   = "DBASE/SHMS/DET/calib_lower_hv_ngcer_fa22.param"
+
+17243 - 17243
+;Calibration & PID Threshold Checks Setting 2
+;Defocused Q2+20% calorimeter calibration calibration
+g_ctp_optics_filename      = "PARAM/SHMS/GEN/defocused_Q2_p20_fa22.param"
+
+17247 - 17247
+;Calibration & PID Threshold Checks Setting 3
+;Defocused Q2+20% calorimeter calibration calibration
+g_ctp_optics_filename      = "PARAM/SHMS/GEN/defocused_Q2_p20_fa22.param"
+
+
+;Drift Chamber Calibration
+
+18183 - 18394
+;Drift Chamber Calibration with run 18436
+g_ctp_det_calib_filename   = "DBASE/SHMS/default_det_calib_dc_18436.param"
+
+18395-18447
+;Drift Chamber Calibration with run 18436
+g_ctp_det_calib_filename   = "DBASE/SHMS/default_det_calib_dc_18436.param"
+
+18494-18990
+;Drift Chamber Calibration with run 18436
+g_ctp_det_calib_filename   = "DBASE/SHMS/default_det_calib_dc_18436.param"
+
+19259-19262
+;Drift Chamber Calibration with run 18436
+g_ctp_det_calib_filename   = "DBASE/SHMS/default_det_calib_dc_18436.param"
+
+19319-19364
+;Drift Chamber Calibration with run 18436
+g_ctp_det_calib_filename   = "DBASE/SHMS/default_det_calib_dc_18436.param"
+
+19366-19403
+;Drift Chamber Calibration with run 18436
+g_ctp_det_calib_filename   = "DBASE/SHMS/default_det_calib_dc_18436.param"
+
+19888-20356
+;Drift Chamber Calibration with run 18436
+g_ctp_det_calib_filename   = "DBASE/SHMS/default_det_calib_dc_18436.param"
+
+20415-20613
+;Drift Chamber Calibration with run 18436
+g_ctp_det_calib_filename   = "DBASE/SHMS/default_det_calib_dc_18436.param"
+
+17479-18181
+;Drift Chamber Calibration with run 17738
+g_ctp_det_calib_filename   = "DBASE/SHMS/default_det_calib_dc_17738.param"
+
+18991-19023
+;Drift Chamber Calibration with run 17738
+g_ctp_det_calib_filename   = "DBASE/SHMS/default_det_calib_dc_17738.param"
+
+19070-19199
+;Drift Chamber Calibration with run 17738
+g_ctp_det_calib_filename   = "DBASE/SHMS/default_det_calib_dc_17738.param"
+
+19407-19647
+;Drift Chamber Calibration with run 17738
+g_ctp_det_calib_filename   = "DBASE/SHMS/default_det_calib_dc_17738.param"
+
+20358-20414
+;Drift Chamber Calibration with run 17738
+g_ctp_det_calib_filename   = "DBASE/SHMS/default_det_calib_dc_17738.param"
+
+17300 - 17312
+;Drift Chamber Calibration with run 19735
+g_ctp_det_calib_filename   = "DBASE/SHMS/default_det_calib_dc_19735.param"
+
+19263 - 19276
+;Drift Chamber Calibration with run 19735
+g_ctp_det_calib_filename   = "DBASE/SHMS/default_det_calib_dc_19735.param"
+
+19689 - 19875
+;Drift Chamber Calibration with run 19735
+g_ctp_det_calib_filename   = "DBASE/SHMS/default_det_calib_dc_19735.param"
+
+20614 - 20770
+;Drift Chamber Calibration with run 19735
+g_ctp_det_calib_filename   = "DBASE/SHMS/default_det_calib_dc_19735.param"
+
+17255 - 17299
+;Drift Chamber Calibration with run 17299
+g_ctp_det_calib_filename   = "DBASE/SHMS/default_det_calib_dc_17299.param"
