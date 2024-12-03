@@ -49,29 +49,29 @@ void replay_production_shms (Int_t RunNumber = 0, Int_t MaxEvent = 0) {
 
   //Initialize gHcParms.
   //Shared SHMS gHcParms setup located in ../shms_shared.h
-  //setupParms(RunNumber);
+  setupParms(RunNumber);
     // Load global parameters
-  gHcParms->Define("gen_run_number", "Run Number", RunNumber);
-  gHcParms->AddString("g_ctp_database_filename", "DBASE/SHMS/standard.database");
-  gHcParms->Load(gHcParms->GetString("g_ctp_database_filename"), RunNumber);
-  gHcParms->Load(gHcParms->GetString("g_ctp_parm_filename"));
-  gHcParms->Load(gHcParms->GetString("g_ctp_kinematics_filename"), RunNumber);
-  gHcParms->Load(gHcParms->GetString("g_ctp_det_calib_filename"));
-  gHcParms->Load(gHcParms->GetString("g_ctp_bcm_calib_filename"));
-  gHcParms->Load(gHcParms->GetString("g_ctp_optics_filename"));
-  // Load parameters for SHMS trigger configuration
-  gHcParms->Load(gHcParms->GetString("g_ctp_trig_config_filename"));
-  // Load fadc debug parameters
-  gHcParms->Load("PARAM/SHMS/GEN/p_fadc_debug.param");
-  // Load BCM values
-  ifstream bcmFile;
-  TString bcmParamFile = Form("PARAM/SHMS/BCM/bcmcurrent_%d.param", RunNumber);
-  bcmFile.open(bcmParamFile);
-  if (bcmFile.is_open()) gHcParms->Load(bcmParamFile);
+  // gHcParms->Define("gen_run_number", "Run Number", RunNumber);
+  // gHcParms->AddString("g_ctp_database_filename", "DBASE/SHMS/standard.database");
+  // gHcParms->Load(gHcParms->GetString("g_ctp_database_filename"), RunNumber);
+  // gHcParms->Load(gHcParms->GetString("g_ctp_parm_filename"));
+  // gHcParms->Load(gHcParms->GetString("g_ctp_kinematics_filename"), RunNumber);
+  // gHcParms->Load(gHcParms->GetString("g_ctp_det_calib_filename"));
+  // gHcParms->Load(gHcParms->GetString("g_ctp_bcm_calib_filename"));
+  // gHcParms->Load(gHcParms->GetString("g_ctp_optics_filename"));
+  // // Load parameters for SHMS trigger configuration
+  // gHcParms->Load(gHcParms->GetString("g_ctp_trig_config_filename"));
+  // // Load fadc debug parameters
+  // gHcParms->Load("PARAM/SHMS/GEN/p_fadc_debug.param");
+  // // Load BCM values
+  // ifstream bcmFile;
+  // TString bcmParamFile = Form("PARAM/SHMS/BCM/bcmcurrent_%d.param", RunNumber);
+  // bcmFile.open(bcmParamFile);
+  // if (bcmFile.is_open()) gHcParms->Load(bcmParamFile);
   
-  // Load the Hall C detector map
-  gHcDetectorMap = new THcDetectorMap();
-  gHcDetectorMap->Load(gHcParms->GetString("g_ctp_map_filename"));
+  // // Load the Hall C detector map
+  // gHcDetectorMap = new THcDetectorMap();
+  // gHcDetectorMap->Load(gHcParms->GetString("g_ctp_map_filename"));
   //Initialize SHMS single-arm DAQ with detectors
   //Shared SHMS apparatus setup located in ../shms_shared.h
   //setupApparatus();
