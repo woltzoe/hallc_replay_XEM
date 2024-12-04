@@ -1,0 +1,13 @@
+num_scal_reads = 12
+
+scal_read_bcm1_current = 5, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+
+scal_read_bcm2_current = 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4
+
+scal_read_bcm4a_current = 5, 4, 4, 5, 5, 4, 4, 4, 4, 4, 4, 4
+
+scal_read_bcm4b_current = -3, -3, -3, -3, -3, -3, -3, -3, -3, -3, -3, -3
+
+scal_read_bcm4c_current = 5, 4, 5, 5, 5, 5, 5, 4, 4, 5, 5, 5
+
+scal_read_event = 1, 3187, 6361, 9425, 10000, 13134, 16256, 19361, 20000, 23152, 26372, 26916
